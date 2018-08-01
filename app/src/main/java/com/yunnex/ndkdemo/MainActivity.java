@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     int count2 = 0;
 
     public void onClick2(View view) {
-        Log.i("Zero", "MainActivity count1: " + (count2++));
+        Log.i("Zero", "MainActivity count2: " + (count2++));
         Intent intent = new Intent(MainActivity.this, MyService.class);
         bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
     }
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     int count3 = 0;
 
     public void onClick3(View view) {
-        Log.i("Zero", "MainActivity count1: " + (count3++));
+        Log.i("Zero", "MainActivity count3: " + (count3++));
         Intent intent = new Intent(MainActivity.this, MyService.class);
         stopService(intent);
     }
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     int count4 = 0;
 
     public void onClick4(View view) {
-        Log.i("Zero", "MainActivity count1: " + (count4++));
+        Log.i("Zero", "MainActivity count4: " + (count4++));
         unbindService(mServiceConnection);
     }
 

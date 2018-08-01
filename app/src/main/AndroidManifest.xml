@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".BActivity" />
 
-        <service android:name=".MyService" />
+        <service android:name=".MyService"
+            android:process=":remote"/>
     </application>
 
 </manifest>
